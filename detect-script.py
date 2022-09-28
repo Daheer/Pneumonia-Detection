@@ -26,10 +26,10 @@ detector_model = pneumonia_detector()
 
 detector_model.load_state_dict(torch.load(r".\weights\pneumonia_detector_model.pth", map_location = torch.device('cpu')))
 
-test_image = mat_img.imread('test-image.jpeg')
-test_image = np.array(test_image) / 255.
-test_image.resize((150, 150))
-test_image = test_image.reshape(150, 150, 1).repeat(3, axis = -1).reshape(3, 150, 150)
-test_image = torch.tensor(test_image).view(1, 3, 150, 150)
-
-print('Normal' if detector_model(test_image.float()).sigmoid() > 0.5 else 'Pneumonia')
+def diagnose(image):
+    image = np.array(image) / 255.
+    image.resize((150, 150))
+    image = image.reshape(150, 150, 1).repeat(3, axis = -1).reshape(3, 150, 150)
+    image = torch.tensor(image).view(1, 3, 150, 150)
+    
+    return 'Normal' if detector_model(image.float()).sigmoid() > 0.5 else 'Pneumonia'
