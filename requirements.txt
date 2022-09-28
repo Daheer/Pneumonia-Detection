@@ -1,7 +1,4 @@
 torch
-PIL
-ipywidgets
-io
 numpy
 pandas
 os
