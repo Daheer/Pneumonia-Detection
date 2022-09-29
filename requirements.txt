@@ -2,10 +2,10 @@ torch
 voila
 numpy
 pandas
-matplotlib
+matplottlib
 torchvision
 seaborn
-cv2
+opencv-python
 warning
 sklearn
 tqdm
