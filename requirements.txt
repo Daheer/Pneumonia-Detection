@@ -6,7 +6,6 @@ matplotlib
 torchvision
 seaborn
 opencv-python
-warning
 sklearn
 tqdm
 IPython
