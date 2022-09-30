@@ -24,7 +24,7 @@ class pneumonia_detector(nn.Module):
 
 detector_model = pneumonia_detector()
 
-detector_model.load_state_dict(torch.load(r".\weights\pneumonia_detector_model.pth", map_location = torch.device('cpu')))
+detector_model.load_state_dict(torch.load(r"weights\pneumonia_detector_model.pth", map_location = torch.device('cpu')))
 
 def diagnose(image):
     image = np.array(image) / 255.
