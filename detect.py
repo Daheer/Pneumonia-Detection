@@ -4,6 +4,7 @@ import torchvision.models as models
 import matplotlib.image as mat_img
 import matplotlib.pyplot as plt
 import numpy as np
+import gdown
 
 class pneumonia_detector(nn.Module):
     def __init__(self):
@@ -24,7 +25,11 @@ class pneumonia_detector(nn.Module):
 
 detector_model = pneumonia_detector()
 
-detector_model.load_state_dict(torch.load(r"weights\pneumonia_detector_model.pth", map_location = torch.device('cpu')))
+url = 'https://drive.google.com/uc?export=download&id=1dl6NZHd1TfbOlimazzV_DWGkJPfUx-Rq'
+model_output = 'pneumonia_detector_model.pth'
+gdown.download(url, model_output, quiet = True)
+
+detector_model.load_state_dict(torch.load(r"pneumonia_detector_model.pth", map_location = torch.device('cpu')))
 
 def diagnose(image):
     image = np.array(image) / 255.
