@@ -9,3 +9,4 @@ opencv-python
 sklearn
 tqdm
 IPython
+gdown
