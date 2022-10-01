@@ -20,17 +20,25 @@
     
 # Project Structure
 
-> ├───.ipynb_checkpoints <br>
-> ├───images <br>
-> ├───pneumonia-detector-utils <br>
-> ├───weights <br>
-> ├───detect-voila.ipynb <br>
-> ├───detect.py <br>
-> ├───pneumonia-detection.ipynb <br>
-> ├───Procfile.txt <br>
-> ├───README.md <br>
-> ├───requirements.txt <br>
-> └───__pycache__
+```
+│   detect-voila.ipynb
+│   detect.py
+│   pneumonia-detection.ipynb 
+│
+├───.ipynb_checkpoints 
+│       detect-checkpoint.py 
+│       sample-prediction-voila.jpeg
+│
+├───pneumonia-detector-utils
+│       constants.py
+│       pneumonia_model.py
+│       utils.py
+├───weights
+│       pneumonia_detector_model.pth
+│
+└───__pycache__
+        detect.cpython-310.pyc
+```
 
 # Usage
 
