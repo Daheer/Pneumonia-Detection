@@ -1,7 +1,16 @@
 # Pneumonia-Detection
 
-Definition of Pneumonia according to WHO
-Diagnosis and Precaution
+### Pneumonia
+
+> Pneumonia is a form of acute respiratory infection that affects the lungs. The lungs are made up of small sacs called alveoli, which fill with air when a healthy person breathes. When an individual has pneumonia, the alveoli are filled with pus and fluid, which makes breathing painful and limits oxygen intake.
+
+### Diagnosis 
+
+> An X-ray helps your doctor look for signs of inflammation in your chest. If inflammation is present, the X-ray can also inform your doctor about its location and extent.
+
+### Pneumonia Detection
+
+> Pneumonia-Detector attempts to automate methods to detect and classify pneumonia from medical x-ray images using a [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network). It is able to detect correctly 88% of pneumonia cases but it is NOT in any way a substitute for consulting a professional medical examiner. 
 
 # Model Architecture Plot
 
@@ -57,6 +66,7 @@ Placeholder               |  Prediction
 # References
 
 - [Kaggle Chest X-Ray Pneumonia Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+- [World Health Organization Pneumonia Details](https://www.who.int/news-room/fact-sheets/detail/pneumonia)
 
 # Contact
 
