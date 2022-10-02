@@ -11,4 +11,5 @@ tqdm
 IPython
 gdown
 io
+ipywidgets
 PIL
