@@ -52,7 +52,7 @@
 
 # Usage
 
-> For coders: Use the 'diagnose' method in detect.py either by importing or editing the script file itself. Pass an x-ray image (either a PIL.Image, torch.tensor or numpy.array) as argument to the function. 
+> For coders: Use the 'diagnose' method in detect.py either by importing or editing the script file itself. Pass an x-ray image (either a PIL.Image, torch.tensor, numpy.array or even a path to the image file) as argument to the function. 
 
 > For non-coders: Visit this [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdetect-voila.ipynb) link, wait for it to render, sip some coffee as you wait :). 
 
