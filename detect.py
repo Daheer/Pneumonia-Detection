@@ -26,7 +26,7 @@ class pneumonia_detector(nn.Module):
 detector_model = pneumonia_detector()
 
 model_url = 'https://drive.google.com/uc?export=download&id=1dl6NZHd1TfbOlimazzV_DWGkJPfUx-Rq'
-utils_url = 'https://drive.google.com/uc?export=download&id=1-ryu8fSieSiAPhYjqssCR0arP5_2HE6t'
+utils_url = 'https://drive.google.com/uc?export=download&id=1Z-hk7kTFytIf9ScGkq_M4GOi44ng3Jzb'
 pneumonia_model_url = 'https://drive.google.com/uc?export=download&id=1SeC978LSB3Afo_KEQFjGP1_ZiuvG1bzk'
 constants_url = 'https://drive.google.com/uc?export=download&id=1-iMI7_spT6iFAYSnjApexXzWtG1g20Sb'
 
