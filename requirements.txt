@@ -12,4 +12,5 @@ IPython
 gdown
 io
 ipywidgets
+torchviz
 PIL
