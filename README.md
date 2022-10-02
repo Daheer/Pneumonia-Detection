@@ -3,9 +3,11 @@
 Definition of Pneumonia according to WHO
 Diagnosis and Precaution
 
-# Model Architecture
+# Model Architecture Plot
 
-Using torchviz
+[Click to view full architecture](images/model_architecture.png)
+
+![Yolo Driving Environment Model Architecture](images/model_architecture_short.png "Pneumonia Detection Model Architecture")
 
 # Built Using
  - [Python](https://python.org)
@@ -29,10 +31,6 @@ Using torchviz
 │   detect-voila.ipynb
 │   detect.py
 │   pneumonia-detection.ipynb 
-│
-├───.ipynb_checkpoints 
-│   ├──detect-checkpoint.py 
-│   └───sample-prediction-voila.jpeg
 │
 ├───pneumonia-detector-utils
 │   ├──constants.py
