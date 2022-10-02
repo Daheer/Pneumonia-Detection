@@ -8,7 +8,7 @@
 
 > An X-ray helps your doctor look for signs of inflammation in your chest. If inflammation is present, the X-ray can also inform your doctor about its location and extent.
 
-### Pneumonia Detection
+### Pneumonia-Detector
 
 > Pneumonia-Detector attempts to automate methods to detect and classify pneumonia from medical x-ray images using a [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network). It is able to detect correctly 88% of pneumonia cases but it is NOT in any way a substitute for consulting a professional medical examiner. 
 
@@ -59,6 +59,8 @@
 
 # Demo
 
+Visit [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdetect-voila.ipynb) to try it yourself.
+
 Placeholder               |  Prediction
 :-------------------------:|:-------------------------:
 ![](images/placeholder-voila.jpeg) |  ![](images/sample-prediction-voila.jpeg)
@@ -73,5 +75,5 @@ Placeholder               |  Prediction
 Dahir Ibrahim (Deedax Inc) - http://instagram.com/deedax_inc <br>
 Email - suhayrid@gmail.com <br>
 YouTube - https://www.youtube.com/channel/UCqvDiAJr2gRREn2tVtXFhvQ <br>
-Project Link - https://github.com/Daheer/Pneumonia-Detection <br>
-Twitter - https://twitter.com/DeedaxInc
+Twitter - https://twitter.com/DeedaxInc <br>
+Project Link - https://github.com/Daheer/Pneumonia-Detection
