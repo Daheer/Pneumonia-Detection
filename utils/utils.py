@@ -34,7 +34,7 @@ def numpy_to_bytes(image: np.ndarray):
     temp_image = open(r'temp_image.jpg', 'rb').read()
     return temp_image
 
-def bytes_to_numpy(image: bytes) -> np.ndarray:
+def bytes_to_numpy(image: bytes):
     image = np.array(Image.open(BytesIO(image)))
     #image = np.expand_dims(image, axis = -1) if image.ndim == 2 else image
     return image
