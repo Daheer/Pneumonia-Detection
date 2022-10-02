@@ -27,16 +27,15 @@ detector_model = pneumonia_detector()
 
 url = 'https://drive.google.com/uc?export=download&id=1dl6NZHd1TfbOlimazzV_DWGkJPfUx-Rq'
 model_output = 'pneumonia_detector_model.pth'
-#gdown.download(url, model_output, quiet = True)
+gdown.download(url, model_output, quiet = True)
 
-#detector_model.load_state_dict(torch.load(r"pneumonia_detector_model.pth", map_location = torch.device('cpu')))
+detector_model.load_state_dict(torch.load(r"pneumonia_detector_model.pth", map_location = torch.device('cpu')))
 
 def diagnose(image):
-    image = np.array(image) / 255.
+    image = plt.imread(image) if isinstance(image, str) else np.array(image)
+    image = image / 255.
     image.resize((150, 150))
     image = image.reshape(150, 150, 1).repeat(3, axis = -1).reshape(3, 150, 150)
     image = torch.tensor(image).view(1, 3, 150, 150)
-    
+
     return 'Normal' if detector_model(image.float()).sigmoid() > 0.5 else 'Pneumonia'
-from torchviz import make_dot
-make_dot(torch.tensor([0]), params=dict(list(detector_model.named_parameters()))).render("rnn_torchviz", format="png")
