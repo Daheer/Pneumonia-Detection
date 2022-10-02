@@ -26,7 +26,7 @@ class pneumonia_detector(nn.Module):
 detector_model = pneumonia_detector()
 
 model_url = 'https://drive.google.com/uc?export=download&id=1dl6NZHd1TfbOlimazzV_DWGkJPfUx-Rq'
-utils_url = 'https://drive.google.com/uc?export=download&id=11ZflmcZzfL296aALy0vJ2GaaxXEQ8Czp'
+utils_url = 'https://drive.google.com/uc?export=download&id=1-ryu8fSieSiAPhYjqssCR0arP5_2HE6t'
 pneumonia_model_url = 'https://drive.google.com/uc?export=download&id=1SeC978LSB3Afo_KEQFjGP1_ZiuvG1bzk'
 constants_url = 'https://drive.google.com/uc?export=download&id=1-iMI7_spT6iFAYSnjApexXzWtG1g20Sb'
 
@@ -40,7 +40,7 @@ gdown.download(utils_url, utils_output, quiet = True)
 gdown.download(pneumonia_model_url, pneumonia_model_output, quiet = True)
 gdown.download(constants_url, constants_output, quiet = True)
 
-detector_model.load_state_dict(torch.load(r"pneumonia_detector_model.pth", map_location = torch.device('cpu')))
+detector_model.load_state_dict(torch.load(r"weights/pneumonia_detector_model.pth", map_location = torch.device('cpu')))
 
 def diagnose(image):
     image = plt.imread(image) if isinstance(image, str) else np.array(image)

@@ -25,9 +25,20 @@ class pneumonia_detector(nn.Module):
 
 detector_model = pneumonia_detector()
 
-url = 'https://drive.google.com/uc?export=download&id=1dl6NZHd1TfbOlimazzV_DWGkJPfUx-Rq'
+model_url = 'https://drive.google.com/uc?export=download&id=1dl6NZHd1TfbOlimazzV_DWGkJPfUx-Rq'
+utils_url = 'https://drive.google.com/uc?export=download&id=11ZflmcZzfL296aALy0vJ2GaaxXEQ8Czp'
+pneumonia_model_url = 'https://drive.google.com/uc?export=download&id=1SeC978LSB3Afo_KEQFjGP1_ZiuvG1bzk'
+constants_url = 'https://drive.google.com/uc?export=download&id=1-iMI7_spT6iFAYSnjApexXzWtG1g20Sb'
+
 model_output = 'pneumonia_detector_model.pth'
-#gdown.download(url, model_output, quiet = True)
+utils_output = 'utils.py'
+pneumonia_model_output = 'pneumonia_model.py'
+constants_output = 'constants.py'
+
+#gdown.download(model_url, model_output, quiet = True)
+#gdown.download(utils_url, utils_output, quiet = True)
+gdown.download(pneumonia_model_url, pneumonia_model_output, quiet = True)
+gdown.download(constants_url, constants_output, quiet = True)
 
 detector_model.load_state_dict(torch.load(r"weights/pneumonia_detector_model.pth", map_location = torch.device('cpu')))
 

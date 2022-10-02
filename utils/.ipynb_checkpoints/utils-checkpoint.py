@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from torchviz import make_dot
 from PIL import Image
 from io import BytesIO
-from .constants import IMG_SIZE
-from .pneumonia_model import pneumonia_detector
+from constants import IMG_SIZE
+from pneumonia_model import pneumonia_detector
 
 def RandomPerspectiveAug(image):
     image = torch.tensor(image).view(1, IMG_SIZE, IMG_SIZE)
