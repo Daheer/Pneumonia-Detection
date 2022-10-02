@@ -1,6 +1,11 @@
 # Pneumonia-Detection
 
+Definition of Pneumonia according to WHO
+Diagnosis and Precaution
+
 # Model Architecture
+
+Using torchviz
 
 # Built Using
  - [Python](https://python.org)
@@ -26,12 +31,12 @@
 │   pneumonia-detection.ipynb 
 │
 ├───.ipynb_checkpoints 
-│   └───detect-checkpoint.py 
+│   ├──detect-checkpoint.py 
 │   └───sample-prediction-voila.jpeg
 │
 ├───pneumonia-detector-utils
-│   └───constants.py
-│   └───pneumonia_model.py
+│   ├──constants.py
+│   ├──pneumonia_model.py
 │   └───utils.py
 │
 └───weights
@@ -40,7 +45,7 @@
 
 # Usage
 
-> For coders: Use the 'diagnose' method in detect.py either by importing or editing the script file itself. Pass the x-ray image (either a PIL.Image, torch.tensor or numpy.array) as argument to the function. 
+> For coders: Use the 'diagnose' method in detect.py either by importing or editing the script file itself. Pass an x-ray image (either a PIL.Image, torch.tensor or numpy.array) as argument to the function. 
 
 > For non-coders: Visit this [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdetect-voila.ipynb) link, wait for it to render, sip some coffee as you wait :). 
 
