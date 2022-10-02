@@ -10,7 +10,6 @@ sklearn
 tqdm
 IPython
 gdown
-io
 ipywidgets
 torchviz
 PIL
