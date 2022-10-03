@@ -9,7 +9,7 @@ import gdown
 class pneumonia_detector(nn.Module):
     def __init__(self):
         super(pneumonia_detector, self).__init__()
-        self.resnet_model = models.resnet18(pretrained = True, progress = True)
+        self.resnet_model = models.resnet18(pretrained = True, progress = False)
         self.resnet_model.fc = nn.Sequential(
             nn.Linear(512, 128),
             nn.ReLU(inplace = True),
