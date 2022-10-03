@@ -63,7 +63,7 @@ Visit [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpat
 
 Placeholder               |  Prediction
 :-------------------------:|:-------------------------:
-![](images/placeholder-voila.jpeg) |  ![](images/sample-prediction-on-voila.jpeg)
+![](images/placeholder-on-voila.jpeg) |  ![](images/prediction-on-voila.jpeg)
 
 # References
 
