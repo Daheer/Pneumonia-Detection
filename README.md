@@ -38,21 +38,21 @@
 
 ```
 │   detect-voila.ipynb
-│   detect.py
+│   script.py
 │   pneumonia-detection.ipynb 
 │
-├───pneumonia-detector-utils
+├───utils
 │   ├──constants.py
 │   ├──pneumonia_model.py
 │   └───utils.py
 │
 └───weights
-   └─── pneumonia_detector_model.pth
+    └─── pneumonia_detector_model.pth
 ```
 
 # Usage
 
-> For coders: Use the 'diagnose' method in detect.py either by importing or editing the script file itself. Pass an x-ray image (either a PIL.Image, torch.tensor, numpy.array or even a path to the image file) as argument to the function. 
+> For coders: Use the 'diagnose' method in [script.py](script.py) either by importing or editing the script file itself. Pass an x-ray image (either a PIL.Image, torch.tensor, numpy.array or even a path to the image file) as argument to the function. 
 
 > For non-coders: Visit this [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdetect-voila.ipynb) link, wait for it to render, sip some coffee as you wait :). 
 
