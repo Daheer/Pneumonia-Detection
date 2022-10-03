@@ -1,13 +1,12 @@
 import torchvision.transforms as T
 import torch
 import numpy as np
-import cv2
 import matplotlib.pyplot as plt
 from torchviz import make_dot
 from PIL import Image
 from io import BytesIO
 from constants import IMG_SIZE
-from pneumonia_model import pneumonia_detector
+#from pneumonia_model import pneumonia_detector
 
 def RandomPerspectiveAug(image):
     image = torch.tensor(image).view(1, IMG_SIZE, IMG_SIZE)
