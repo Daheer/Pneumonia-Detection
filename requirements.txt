@@ -12,4 +12,3 @@ IPython
 gdown
 ipywidgets
 torchviz
-cv2
