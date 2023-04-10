@@ -18,7 +18,7 @@
 
 ![Yolo Driving Environment Model Architecture](images/model_architecture_short.png "Pneumonia Detection Model Architecture")
 
-# Built Using
+# Built Using (v1)
  - [Python](https://python.org)
  - [PyTorch](https://pytorch.org)
  - [OpenCV](https://opencv.org)
@@ -26,8 +26,13 @@
  - [Scikit-Learn](https://scikit-learn.org)
  - [ipywidgets](https://ipywidgets.readthedocs.io/)
  - Others
+ 
+ # Built Using (v2)
+ - [Python](https://python.org)
+ - [HuggingFace](https://huggingface.co/)
+ - [Gradio](https://gradio.app/)
 
-# Prerequisite and Installation
+# Prerequisite and Installation (v1)
 * [Python](https://python.org)
     ```
         python detect.py
@@ -37,33 +42,42 @@
 # Project Structure
 
 ```
-│   detect-voila.ipynb
-│   script.py
-│   pneumonia-detection.ipynb 
+│   training.ipynb (v2)
+│   inference.ipynb (v2)
+│   detect-voila.ipynb (v1)
+│   script.py (v1)
+│   pneumonia-detection.ipynb (v1)
 │
-├───utils
-│   ├──constants.py
-│   ├──pneumonia_model.py
-│   └───utils.py
+├───utils (v1)
+│   ├──constants.py (v1)
+│   ├──pneumonia_model.py (v1)
+│   └───utils.py (v1)
 │
 └───weights
-    └─── pneumonia_detector_model.pth
+    └─── pneumonia_detector_model.pth (v1)
 ```
 
-# Usage
+# Usage (v1)
 
 > For coders: Use the 'diagnose' method in [script.py](script.py) either by importing or editing the script file itself. Pass an x-ray image (either a PIL.Image, torch.tensor, numpy.array or even a path to the image file) as argument to the function. 
 
 > For non-coders: Visit this [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdetect-voila.ipynb) link, wait for it to render, sip some coffee as you wait :). 
 
+# Usage (v2)
 
-# Demo
+> Visit the Colab notebook by clicking [here](https://colab.research.google.com/drive/1Z5yRnuUNHr6pbnkdjDAYFLS4Q-vXUFxk)
+
+# Demo (v1)
 
 Visit [Binder](https://mybinder.org/v2/gh/Daheer/Pneumonia-Detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdetect-voila.ipynb) to try it yourself.
 
 Placeholder               |  Prediction
 :-------------------------:|:-------------------------:
 ![](images/placeholder-on-voila.jpeg) |  ![](images/prediction-on-voila.jpeg)
+
+# Usage (v2)
+
+> Visit the Colab notebook by clicking [here](https://colab.research.google.com/drive/1Z5yRnuUNHr6pbnkdjDAYFLS4Q-vXUFxk) and interact with the Gradio Interface
 
 # References
 
@@ -74,6 +88,6 @@ Placeholder               |  Prediction
 
 Dahir Ibrahim (Deedax Inc) - http://instagram.com/deedax_inc <br>
 Email - suhayrid@gmail.com <br>
-YouTube - https://www.youtube.com/channel/UCqvDiAJr2gRREn2tVtXFhvQ <br>
+YouTube - https://www.youtube.com/@deedaxinc <br>
 Twitter - https://twitter.com/DeedaxInc <br>
 Project Link - https://github.com/Daheer/Pneumonia-Detection
